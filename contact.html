@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="flex justify-center small-justify-end">
+        <div class="burger large-none medium-none small-block">
+        </div>
+        <nav class="width-30 small-100  medium-100 small-none">
+            <a href="index.html" title="page de presentation">Presentation</a>
+            <a href="hobbies.html" title="page des hobbies">Hobbies</a>
+            <a href="contact.html" title="page contact">Contact</a>
+        </nav>
+    </header>
+
+    <h1>Contact</h1>
+    <div class="container">
+
+        <form class="container" action="https://httpbin.org/post" method="post">
+
+                <label class="width-50 small-100" for="name">
+                    <input class="width-100" type="text" id="name" name="name" placeholder="votre nom" required>
+                </label>
+
+                <label class="width-50 small-100" for="email">
+                    <input class="width-100" type="email" id="email" name="email" placeholder="votre email" required>
+                </label>
+    
+                <textarea class="width-100" name="message" placeholder="votre message"></textarea>
+                <div class="flex justify-center width-100">
+                    <input type="submit">
+                </div>
+
+        </form>
+
+    </div>
+    <script src="js/function.js"></script>
+</body>
+
+</html>

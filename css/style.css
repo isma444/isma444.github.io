@@ -1,0 +1,362 @@
+/* POLICES*/
+body {
+  font-family: "Expletus Sans", sans-serif;
+}
+
+header, h1, h2, h3, th {
+  font-family: "Gluten", cursive;
+}
+
+/* MISE EN PAGE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
+}
+
+.large-none{
+  display: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+body {
+  margin-top: 83px;
+}
+
+.flex,
+header nav,
+form,
+.liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-between,
+header nav {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.liste > h3,
+.liste ul,
+table td,
+h1 {
+  text-align: center;
+}
+
+iframe {
+  margin-left: 50%;
+  translate: -50%;
+}
+
+form {
+  justify-content: space-between;
+}
+
+form > input {
+  display: block;
+}
+
+form>div >input {
+  display: inline-block;
+}
+
+.listes{
+  position: relative;
+  /* width: 700px; */
+  height: 500px;
+}
+
+.langage, .outil{
+
+  position: absolute; 
+  top: 0;
+  
+}
+
+.langage{
+  left: 0;
+}
+.outil{
+  right: 0;
+}
+
+/* WIDTH */
+
+.width-100,
+header,
+.liste > h3 {
+  width: 100%;
+}
+
+.width-50, form {
+  width: 49%;
+}
+
+.width-30 {
+  width: 29%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-70 {
+  width: 69%;
+}
+
+table tr td:first-child {
+  width: 50%;
+}
+
+form > div > label > input {
+  width: 99%;
+  height: 3rem;
+}
+
+textarea {
+  height: 250px;
+}
+
+.liste{
+  height: 50%;
+}
+
+/* PADDING & MARGIN */
+header {
+  padding: 24px;
+}
+
+input, textarea {
+  margin-top: 24px;
+}
+
+article h2{
+  margin-bottom: 8px;
+}
+
+.liste h3, ul {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+ul > li {
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.listes,
+.table,
+article {
+  margin-top: 38px;
+  margin-bottom: 24px;
+}
+
+form > label > input {
+  padding: 16px;
+}
+
+header > nav > li,
+.liste li {
+  list-style-type: none;
+}
+
+.liste {
+  
+  justify-content: space-evenly;
+  box-shadow: 0px 1px 1px 0px #000, inset 0px 2px 9px 0px #000, 4px 9px 4px 1px rgba(0, 0, 0, 0);
+}
+
+table td {
+  border: 2px solid #a18f86;
+}
+
+/* personnalisation */
+header {
+  box-shadow: 0.1px 0.1px 5.1px black;
+  background-color:#ffffff;
+}
+
+.photo{
+  transform: skew(-7deg, -1deg);
+}
+.description {
+  transform: skew(-7deg, 1deg);
+}
+
+.description {
+  background-image: url(../img/);
+  background-size: cover;
+}
+
+input, textarea{
+  border: 2px solid #a18f86;
+}
+
+.liste {
+  background-color: #a18f86;
+  border: 1px solid #0a0a0a;
+  border-radius: 15px;
+}
+
+header > nav >  a:hover {
+  color: darkred;
+}
+
+
+.liste:hover  {
+  scale: 1.5;
+  transition-duration: 200ms;
+}
+
+.description>p{
+   background: linear-gradient(#1a1919,#b14a1a, #1f1c1c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+body{
+  background-color: #b4b2b2;
+}
+header{
+  background-color: #a18f86;
+}
+
+/* MEDIUM */
+
+@media all and (min-width : 501px) and (max-width : 1279px){
+
+  .medium-none{
+    display: none;
+  }
+
+  .medium-100{
+    width : 95%;
+  }
+  .medium-50{
+    width: 49%;
+  }
+
+  .medium-justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .photo, .description{
+    transform: skew(0);
+  }
+
+  .medium-justify-center{
+    justify-content: center;
+  }
+  table{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  iframe{
+    height :400px;
+  }
+  
+}
+
+/* SMALL */ 
+
+@media all and (max-width : 500px ){
+  
+  .small-none{
+    display: none;
+  }
+
+  .small-block {
+    display: block;
+  }
+
+  .small-100{
+  width: 95%;
+  }
+
+  .small-50{
+    width: 49%;
+  }
+
+  .photo, .description{
+    transform: skew(0);
+  }
+
+  .liste:hover  {
+    scale: 1;
+  }
+
+ .small-justify-end{
+    justify-content:end;
+  }
+
+  .small-justify-center{
+    justify-content: center;
+  }
+
+  table{
+    margin-left: 50%;
+    translate: -50%;
+  }
+  h2, h3{
+    margin-top: 8px ;
+    text-align: center;
+  } 
+
+  iframe{
+    height :250px;
+  }
+  .burger {
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/menu_2976215.png);
+    background-size: cover;
+  }
+
+  .menu{
+    position: fixed;
+    right: -167px;
+    top: 83px;
+    background-color: #ece5ec;
+    width: 167px;
+    height: 322px;
+    border: 1px solid black;
+    z-index: 1;
+    transition: 500ms;
+  }
+
+  .active {
+    right: 0px;
+  }
+
+  .menu>nav>a{
+    padding: 8px;
+  }
+
+}
